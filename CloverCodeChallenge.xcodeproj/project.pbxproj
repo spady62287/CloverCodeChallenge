@@ -7,6 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		994EB5B525EFE99200963804 /* ViewControllerDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 994EB59C25EFE99200963804 /* ViewControllerDetails.swift */; };
+		994EB5B625EFE99200963804 /* RestaurantUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 994EB59E25EFE99200963804 /* RestaurantUtility.swift */; };
+		994EB5B725EFE99200963804 /* RestaurauntNavigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 994EB59F25EFE99200963804 /* RestaurauntNavigator.swift */; };
+		994EB5B825EFE99200963804 /* RestaurantResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 994EB5A325EFE99200963804 /* RestaurantResponse.swift */; };
+		994EB5B925EFE99200963804 /* RestaurantRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 994EB5A525EFE99200963804 /* RestaurantRequest.swift */; };
+		994EB5BA25EFE99200963804 /* RestaurantResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 994EB5A625EFE99200963804 /* RestaurantResult.swift */; };
+		994EB5BB25EFE99200963804 /* AppConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 994EB5AA25EFE99200963804 /* AppConstants.swift */; };
+		994EB5BC25EFE99200963804 /* AnimatedLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 994EB5AC25EFE99200963804 /* AnimatedLoader.swift */; };
+		994EB5BD25EFE99200963804 /* BaseResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 994EB5AE25EFE99200963804 /* BaseResponse.swift */; };
+		994EB5BE25EFE99200963804 /* BaseCodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 994EB5AF25EFE99200963804 /* BaseCodable.swift */; };
+		994EB5BF25EFE99200963804 /* BaseRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 994EB5B125EFE99200963804 /* BaseRequest.swift */; };
+		994EB5C025EFE99200963804 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 994EB5B225EFE99200963804 /* BaseViewController.swift */; };
+		994EB5C125EFE99200963804 /* BaseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 994EB5B325EFE99200963804 /* BaseService.swift */; };
+		994EB5C225EFE99200963804 /* BaseNavigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 994EB5B425EFE99200963804 /* BaseNavigator.swift */; };
+		994EB5CD25EFEA1000963804 /* ResturauntNetworkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 994EB5CC25EFEA1000963804 /* ResturauntNetworkTests.swift */; };
 		996D6AB325EF3748007AE0A1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 996D6AB225EF3748007AE0A1 /* AppDelegate.swift */; };
 		996D6AB525EF3748007AE0A1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 996D6AB425EF3748007AE0A1 /* SceneDelegate.swift */; };
 		996D6AB725EF3748007AE0A1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 996D6AB625EF3748007AE0A1 /* ViewController.swift */; };
@@ -38,6 +53,21 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		994EB59C25EFE99200963804 /* ViewControllerDetails.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerDetails.swift; sourceTree = "<group>"; };
+		994EB59E25EFE99200963804 /* RestaurantUtility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RestaurantUtility.swift; sourceTree = "<group>"; };
+		994EB59F25EFE99200963804 /* RestaurauntNavigator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RestaurauntNavigator.swift; sourceTree = "<group>"; };
+		994EB5A325EFE99200963804 /* RestaurantResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RestaurantResponse.swift; sourceTree = "<group>"; };
+		994EB5A525EFE99200963804 /* RestaurantRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RestaurantRequest.swift; sourceTree = "<group>"; };
+		994EB5A625EFE99200963804 /* RestaurantResult.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RestaurantResult.swift; sourceTree = "<group>"; };
+		994EB5AA25EFE99200963804 /* AppConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppConstants.swift; sourceTree = "<group>"; };
+		994EB5AC25EFE99200963804 /* AnimatedLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimatedLoader.swift; sourceTree = "<group>"; };
+		994EB5AE25EFE99200963804 /* BaseResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseResponse.swift; sourceTree = "<group>"; };
+		994EB5AF25EFE99200963804 /* BaseCodable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseCodable.swift; sourceTree = "<group>"; };
+		994EB5B125EFE99200963804 /* BaseRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseRequest.swift; sourceTree = "<group>"; };
+		994EB5B225EFE99200963804 /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		994EB5B325EFE99200963804 /* BaseService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseService.swift; sourceTree = "<group>"; };
+		994EB5B425EFE99200963804 /* BaseNavigator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseNavigator.swift; sourceTree = "<group>"; };
+		994EB5CC25EFEA1000963804 /* ResturauntNetworkTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResturauntNetworkTests.swift; sourceTree = "<group>"; };
 		996D6AAF25EF3748007AE0A1 /* CloverCodeChallenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CloverCodeChallenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		996D6AB225EF3748007AE0A1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		996D6AB425EF3748007AE0A1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -82,6 +112,132 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		994EB59925EFE99200963804 /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				994EB59A25EFE99200963804 /* RestaurantList */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		994EB59A25EFE99200963804 /* RestaurantList */ = {
+			isa = PBXGroup;
+			children = (
+				994EB59B25EFE99200963804 /* Controller */,
+				994EB5A025EFE99200963804 /* Model */,
+				994EB5A725EFE99200963804 /* View */,
+			);
+			path = RestaurantList;
+			sourceTree = "<group>";
+		};
+		994EB59B25EFE99200963804 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				996D6AB625EF3748007AE0A1 /* ViewController.swift */,
+				994EB59C25EFE99200963804 /* ViewControllerDetails.swift */,
+				994EB59D25EFE99200963804 /* BusinessLogic */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		994EB59D25EFE99200963804 /* BusinessLogic */ = {
+			isa = PBXGroup;
+			children = (
+				994EB59E25EFE99200963804 /* RestaurantUtility.swift */,
+				994EB59F25EFE99200963804 /* RestaurauntNavigator.swift */,
+			);
+			path = BusinessLogic;
+			sourceTree = "<group>";
+		};
+		994EB5A025EFE99200963804 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				994EB5A125EFE99200963804 /* Restaurant */,
+				994EB5A625EFE99200963804 /* RestaurantResult.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		994EB5A125EFE99200963804 /* Restaurant */ = {
+			isa = PBXGroup;
+			children = (
+				994EB5A225EFE99200963804 /* Response */,
+				994EB5A425EFE99200963804 /* Request */,
+			);
+			path = Restaurant;
+			sourceTree = "<group>";
+		};
+		994EB5A225EFE99200963804 /* Response */ = {
+			isa = PBXGroup;
+			children = (
+				994EB5A325EFE99200963804 /* RestaurantResponse.swift */,
+			);
+			path = Response;
+			sourceTree = "<group>";
+		};
+		994EB5A425EFE99200963804 /* Request */ = {
+			isa = PBXGroup;
+			children = (
+				994EB5A525EFE99200963804 /* RestaurantRequest.swift */,
+			);
+			path = Request;
+			sourceTree = "<group>";
+		};
+		994EB5A725EFE99200963804 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				996D6AB825EF3748007AE0A1 /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		994EB5A825EFE99200963804 /* Subsytems */ = {
+			isa = PBXGroup;
+			children = (
+				994EB5A925EFE99200963804 /* Constants */,
+				994EB5AB25EFE99200963804 /* View */,
+				994EB5AD25EFE99200963804 /* Protocols */,
+				994EB5B025EFE99200963804 /* Base */,
+			);
+			path = Subsytems;
+			sourceTree = "<group>";
+		};
+		994EB5A925EFE99200963804 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				994EB5AA25EFE99200963804 /* AppConstants.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		994EB5AB25EFE99200963804 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				994EB5AC25EFE99200963804 /* AnimatedLoader.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		994EB5AD25EFE99200963804 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				994EB5AE25EFE99200963804 /* BaseResponse.swift */,
+				994EB5AF25EFE99200963804 /* BaseCodable.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		994EB5B025EFE99200963804 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				994EB5B125EFE99200963804 /* BaseRequest.swift */,
+				994EB5B225EFE99200963804 /* BaseViewController.swift */,
+				994EB5B325EFE99200963804 /* BaseService.swift */,
+				994EB5B425EFE99200963804 /* BaseNavigator.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
 		996D6AA625EF3748007AE0A1 = {
 			isa = PBXGroup;
 			children = (
@@ -110,11 +266,11 @@
 			children = (
 				996D6AB225EF3748007AE0A1 /* AppDelegate.swift */,
 				996D6AB425EF3748007AE0A1 /* SceneDelegate.swift */,
-				996D6AB625EF3748007AE0A1 /* ViewController.swift */,
-				996D6AB825EF3748007AE0A1 /* Main.storyboard */,
 				996D6ABB25EF3749007AE0A1 /* Assets.xcassets */,
 				996D6ABD25EF3749007AE0A1 /* LaunchScreen.storyboard */,
 				996D6AC025EF3749007AE0A1 /* Info.plist */,
+				994EB59925EFE99200963804 /* Features */,
+				994EB5A825EFE99200963804 /* Subsytems */,
 			);
 			path = CloverCodeChallenge;
 			sourceTree = "<group>";
@@ -122,6 +278,7 @@
 		996D6AC825EF3749007AE0A1 /* CloverCodeChallengeTests */ = {
 			isa = PBXGroup;
 			children = (
+				994EB5CC25EFEA1000963804 /* ResturauntNetworkTests.swift */,
 				996D6AC925EF3749007AE0A1 /* CloverCodeChallengeTests.swift */,
 				996D6ACB25EF3749007AE0A1 /* Info.plist */,
 			);
@@ -271,8 +428,22 @@
 			buildActionMask = 2147483647;
 			files = (
 				996D6AB725EF3748007AE0A1 /* ViewController.swift in Sources */,
+				994EB5B825EFE99200963804 /* RestaurantResponse.swift in Sources */,
+				994EB5BE25EFE99200963804 /* BaseCodable.swift in Sources */,
 				996D6AB325EF3748007AE0A1 /* AppDelegate.swift in Sources */,
+				994EB5BD25EFE99200963804 /* BaseResponse.swift in Sources */,
+				994EB5C225EFE99200963804 /* BaseNavigator.swift in Sources */,
+				994EB5C025EFE99200963804 /* BaseViewController.swift in Sources */,
+				994EB5B725EFE99200963804 /* RestaurauntNavigator.swift in Sources */,
+				994EB5B925EFE99200963804 /* RestaurantRequest.swift in Sources */,
+				994EB5C125EFE99200963804 /* BaseService.swift in Sources */,
+				994EB5B625EFE99200963804 /* RestaurantUtility.swift in Sources */,
 				996D6AB525EF3748007AE0A1 /* SceneDelegate.swift in Sources */,
+				994EB5BC25EFE99200963804 /* AnimatedLoader.swift in Sources */,
+				994EB5BF25EFE99200963804 /* BaseRequest.swift in Sources */,
+				994EB5B525EFE99200963804 /* ViewControllerDetails.swift in Sources */,
+				994EB5BA25EFE99200963804 /* RestaurantResult.swift in Sources */,
+				994EB5BB25EFE99200963804 /* AppConstants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -281,6 +452,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				996D6ACA25EF3749007AE0A1 /* CloverCodeChallengeTests.swift in Sources */,
+				994EB5CD25EFEA1000963804 /* ResturauntNetworkTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
