@@ -13,3 +13,12 @@ struct RestaurantResult: BaseCodable {
     var name: String?
     var identifier: Int?
 }
+
+extension RestaurantResult {
+    enum CodingKeys: String, CodingKey {
+        case category
+        case description
+        case name
+        case identifier = "id"
+    }
+}
