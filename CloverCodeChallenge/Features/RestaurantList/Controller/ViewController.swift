@@ -23,8 +23,8 @@ class ViewController: BaseViewController, UITableViewDataSource, UITableViewDele
         loadData(for: self.tableView)
     }
 
-    //MARK: - Tableview Delegate & Datasource
-    func tableView(_ tableView:UITableView, numberOfRowsInSection section:Int) -> Int {
+    // MARK: - Tableview Delegate & Datasource
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         if let restaurants = restaurantList {
             return restaurants.count
         }
@@ -58,8 +58,7 @@ class ViewController: BaseViewController, UITableViewDataSource, UITableViewDele
     // MARK: - Base Navigator Delegate
     func navigatorWillTransitionToViewController(destinationViewController: UIViewController) {
         if destinationViewController.isKind(of: ViewControllerDetails.self) {
-            (destinationViewController as! ViewControllerDetails).selectedRestaurant = self.selectedRestaurant
+            (destinationViewController as? ViewControllerDetails)?.selectedRestaurant = self.selectedRestaurant
         }
     }
 }
-

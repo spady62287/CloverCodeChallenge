@@ -33,6 +33,7 @@
 		996D6AE825EF3890007AE0A1 /* APIReference.md in Resources */ = {isa = PBXBuildFile; fileRef = 996D6AE525EF3890007AE0A1 /* APIReference.md */; };
 		996D6AE925EF3890007AE0A1 /* Project.md in Resources */ = {isa = PBXBuildFile; fileRef = 996D6AE625EF3890007AE0A1 /* Project.md */; };
 		996D6AEA25EF3890007AE0A1 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 996D6AE725EF3890007AE0A1 /* README.md */; };
+		99A68E4825F16912001DE9E5 /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = 99A68E4725F16912001DE9E5 /* .swiftlint.yml */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -85,6 +86,7 @@
 		996D6AE525EF3890007AE0A1 /* APIReference.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = APIReference.md; sourceTree = "<group>"; };
 		996D6AE625EF3890007AE0A1 /* Project.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = Project.md; sourceTree = "<group>"; };
 		996D6AE725EF3890007AE0A1 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		99A68E4725F16912001DE9E5 /* .swiftlint.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.yaml; path = .swiftlint.yml; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -241,6 +243,7 @@
 		996D6AA625EF3748007AE0A1 = {
 			isa = PBXGroup;
 			children = (
+				99A68E4725F16912001DE9E5 /* .swiftlint.yml */,
 				996D6AE525EF3890007AE0A1 /* APIReference.md */,
 				996D6AE625EF3890007AE0A1 /* Project.md */,
 				996D6AE725EF3890007AE0A1 /* README.md */,
@@ -400,6 +403,7 @@
 				996D6AEA25EF3890007AE0A1 /* README.md in Resources */,
 				996D6AE925EF3890007AE0A1 /* Project.md in Resources */,
 				996D6ABF25EF3749007AE0A1 /* LaunchScreen.storyboard in Resources */,
+				99A68E4825F16912001DE9E5 /* .swiftlint.yml in Resources */,
 				996D6ABC25EF3749007AE0A1 /* Assets.xcassets in Resources */,
 				996D6ABA25EF3748007AE0A1 /* Main.storyboard in Resources */,
 				996D6AE825EF3890007AE0A1 /* APIReference.md in Resources */,

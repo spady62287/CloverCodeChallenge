@@ -15,7 +15,7 @@ import UIKit
 
 // MARK: - Navigation Type
 enum BaseNavigationTransitionType {
-    case BaseNavigationTransitionTypeModal
+    case baseNavigationTransitionTypeModal
 }
 
 // MARK: - Navigation to Features
@@ -31,8 +31,8 @@ extension BaseNavigator {
         }
         
         switch transitionType {
-            case .BaseNavigationTransitionTypeModal:
-                fromViewController.present(targetVC, animated: true)
+        case .baseNavigationTransitionTypeModal:
+            fromViewController.present(targetVC, animated: true)
         }
     }
 }

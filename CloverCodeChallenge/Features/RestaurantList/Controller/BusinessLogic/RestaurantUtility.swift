@@ -18,9 +18,9 @@ class RestaurantUtillity: BaseService {
      - returns: URLSessionDataTask?
      
      */
-    @discardableResult static public func restaurantList(_ request: RestaurantRequest = RestaurantRequest(), dispatchQueue: DispatchQueue? = BaseService.dispatchQueue, completionHandler: @escaping (RestaurantResponse) -> ()) -> URLSessionDataTask? {
+    @discardableResult static public func restaurantList(_ request: RestaurantRequest = RestaurantRequest(), dispatchQueue: DispatchQueue? = BaseService.dispatchQueue, completionHandler: @escaping (RestaurantResponse) -> Void) -> URLSessionDataTask? {
         
-        var task: URLSessionDataTask? = nil
+        var task: URLSessionDataTask?
 
         task = makeGetRequest(with: request, completeOn: dispatchQueue) { (data, response, error) in
             

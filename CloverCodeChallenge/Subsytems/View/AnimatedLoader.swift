@@ -9,7 +9,7 @@ import UIKit
 
 class AnimatedLoader: UIView {
     
-    @IBInspectable var tick:CGFloat = 1.0 {
+    @IBInspectable var tick: CGFloat = 1.0 {
         didSet { setNeedsDisplay() }
     }
     
@@ -20,7 +20,12 @@ class AnimatedLoader: UIView {
     func start() {
         guard timer == nil else { return }
         
-        timer = Timer(timeInterval: 0.7 / AnimatedLoader.numberOfFrames, target: self, selector: #selector(AnimatedLoader.timerEvent), userInfo: nil, repeats: true)
+        timer = Timer(timeInterval: 0.7 / AnimatedLoader.numberOfFrames,
+                      target: self,
+                      selector: #selector(AnimatedLoader.timerEvent),
+                      userInfo: nil,
+                      repeats: true)
+        
         RunLoop.main.add(timer!, forMode: .common)
     }
     

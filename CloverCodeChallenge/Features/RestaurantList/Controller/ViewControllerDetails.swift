@@ -22,11 +22,11 @@ class ViewControllerDetails: BaseViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        if let restaurant = selectedRestaurant, let id = restaurant.id {
+        if let restaurant = selectedRestaurant, let identifier = restaurant.identifier {
             categoryLabel.text = restaurant.category
             descriptionLabel.text = restaurant.description
             nameLabel.text = restaurant.name
-            idLabel.text = "\(id)"
+            idLabel.text = "\(identifier)"
         }
     }
 }

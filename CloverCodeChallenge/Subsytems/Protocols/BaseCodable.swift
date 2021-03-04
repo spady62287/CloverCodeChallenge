@@ -7,34 +7,34 @@
 
 import Foundation
 
-typealias JSONDictionary = Dictionary<String, Any>
-typealias JSONArray = Array<Any>
+typealias JSONDictionary = [String: Any]
+typealias JSONArray = [Any]
 
 protocol BaseCodable: Codable {
-    //Returns default JSONDecoder. Override in your struct implementation for custom configurations
+    // Returns default JSONDecoder. Override in your struct implementation for custom configurations
     static var jsonDecoder: JSONDecoder { get }
     
-    //Generic JSON decode of data.
+    // Generic JSON decode of data.
     static func fromJSON<T: Decodable>(_ data: Data?) -> [T]?
     
-    //Returns default JSONEncoder. Override for custom configurations
+    // Returns default JSONEncoder. Override for custom configurations
     var jsonEncoder: JSONEncoder { get }
 }
 
-//Default implementation of JSON wrapper
+// Default implementation of JSON wrapper
 extension BaseCodable {
     
-    //Returns default JSONDecoder. Override for custom configurations
+    // Returns default JSONDecoder. Override for custom configurations
     public static var jsonDecoder: JSONDecoder {
-        let result:JSONDecoder = JSONDecoder()
+        let result: JSONDecoder = JSONDecoder()
         
-        //make this our default.
+        // make this our default.
         result.dateDecodingStrategy = .formatted(DateFormatter.init())
         
         return result
     }
     
-    //Returns Generic JSON
+    // Returns Generic JSON
     public static func fromJSON<T: Decodable>(_ data: Data?) -> [T]? {
         guard let data = data else {
             return nil
@@ -47,11 +47,11 @@ extension BaseCodable {
         }
     }
     
-    ///Returns default JSONEncoder. Override in your struct implementation for custom configurations
+    /// Returns default JSONEncoder. Override in your struct implementation for custom configurations
     public var jsonEncoder: JSONEncoder {
-        let result:JSONEncoder = JSONEncoder()
+        let result: JSONEncoder = JSONEncoder()
         
-        //make this our default.
+        // make this our default.
         result.dateEncodingStrategy = .formatted(DateFormatter.init())
         
         return result
