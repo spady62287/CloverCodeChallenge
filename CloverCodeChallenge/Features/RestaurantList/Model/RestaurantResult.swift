@@ -11,5 +11,5 @@ struct RestaurantResult: BaseCodable {
     var category: String?
     var description: String?
     var name: String?
-    var id: Int?
+    var identifier: Int?
 }

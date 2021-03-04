@@ -35,12 +35,12 @@ class BaseService {
         return endpoint
     }
     
-    static fileprivate let dispatchQueueQueue:DispatchQueue = DispatchQueue(label: "BaseService.dispatchQueueQueue", attributes: .concurrent)
-    static fileprivate var _dispatchQueue:DispatchQueue = DispatchQueue.main
+    static fileprivate let dispatchQueueQueue: DispatchQueue = DispatchQueue(label: "BaseService.dispatchQueueQueue", attributes: .concurrent)
+    static fileprivate var _dispatchQueue: DispatchQueue = DispatchQueue.main
     
-    static var dispatchQueue:DispatchQueue {
+    static var dispatchQueue: DispatchQueue {
         get {
-            var result:DispatchQueue! //force unwrap declaration protected by _dispatchQueue being non-optional
+            var result: DispatchQueue! // force unwrap declaration protected by _dispatchQueue being non-optional
             BaseService.dispatchQueueQueue.sync {
                 result = BaseService._dispatchQueue
             }
@@ -69,12 +69,12 @@ class BaseService {
     }
 }
 
-//Utilities for making requests and processing errors on the service
+// Utilities for making requests and processing errors on the service
 extension BaseService {
     static func makeRequest<T: BaseRequest>(with baseRequest: T,
-                                                      urlRequest:URLRequest,
-                                                      completeOn dispatchQueue: DispatchQueue?,
-                                                      completionHandler: @escaping (Data?, URLResponse?, Error?) -> Swift.Void) -> URLSessionDataTask? {
+                                            urlRequest: URLRequest,
+                                            completeOn dispatchQueue: DispatchQueue?,
+                                            completionHandler: @escaping (Data?, URLResponse?, Error?) -> Swift.Void) -> URLSessionDataTask? {
         return BaseService.sharedSession.dataTask(with: urlRequest) { (data, response, error) in
             self.executeOnQueue(dispatchQueue: dispatchQueue) {
                 completionHandler(data, response, error)
@@ -83,8 +83,8 @@ extension BaseService {
     }
     
     static func makeGetRequest<T: BaseRequest>(with baseRequest: T,
-                                                         completeOn dispatchQueue: DispatchQueue?,
-                                                         completionHandler: @escaping (Data?, URLResponse?, Error?) -> Swift.Void) -> URLSessionDataTask? {
+                                               completeOn dispatchQueue: DispatchQueue?,
+                                               completionHandler: @escaping (Data?, URLResponse?, Error?) -> Swift.Void) -> URLSessionDataTask? {
         guard let urlRequest = baseRequest.getRequest else {
             return nil
         }

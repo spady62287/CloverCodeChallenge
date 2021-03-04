@@ -33,7 +33,7 @@ class BaseViewController: UIViewController, BaseNavigator {
     
     func loadData(for tableView: UITableView) {
         showLoadingView()
-        RestaurantUtillity.restaurantList() { response in
+        RestaurantUtillity.restaurantList { response in
             if let result = response.result {
                 self.restaurantList = result
                 self.hideLoadingView()
@@ -53,10 +53,9 @@ class BaseViewController: UIViewController, BaseNavigator {
     }
     
     func hideLoadingView() {
+        self.loadingSpinner.stop()
         UIView.animate(withDuration: 0.3, animations: {
             self.loadingView.alpha = 0
-        }) { (completed) in
-            self.loadingSpinner.stop()
-        }
+        })
     }
 }

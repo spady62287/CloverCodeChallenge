@@ -16,7 +16,7 @@ class ResturauntNetworkTests: XCTestCase {
         let expectation = XCTestExpectation(description: "The Response Result should not be nil")
         
         // When
-        RestaurantUtillity.restaurantList() { response in
+        RestaurantUtillity.restaurantList { response in
             restaurantList = response.result
             XCTAssertNotNil(restaurantList)
             expectation.fulfill()
@@ -32,7 +32,7 @@ class ResturauntNetworkTests: XCTestCase {
         let expectation = XCTestExpectation(description: "There should be 5 resturaunts in the List")
         
         // When
-        RestaurantUtillity.restaurantList() { response in
+        RestaurantUtillity.restaurantList { response in
             restaurantList = response.result
             XCTAssertEqual(restaurantList?.count, 5)
             expectation.fulfill()
@@ -48,7 +48,7 @@ class ResturauntNetworkTests: XCTestCase {
         let expectation = XCTestExpectation(description: "The First Model should be Resturaunt 1")
         
         // When
-        RestaurantUtillity.restaurantList() { response in
+        RestaurantUtillity.restaurantList { response in
             restaurantList = response.result
             XCTAssertEqual(restaurantList?[0].name, "Restaurant 1")
             expectation.fulfill()
@@ -64,7 +64,7 @@ class ResturauntNetworkTests: XCTestCase {
         let expectation = XCTestExpectation(description: "The Third Model ID should be ID 3")
         
         // When
-        RestaurantUtillity.restaurantList() { response in
+        RestaurantUtillity.restaurantList { response in
             restaurantList = response.result
             XCTAssertEqual(restaurantList?[2].id, 3)
             expectation.fulfill()

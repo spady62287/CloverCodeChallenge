@@ -24,6 +24,9 @@ class RestaurauntNavigator: BaseNavigator {
     
     // MARK: - Screens To Navigate to
     func restaurauntDetailsViewController(viewController: UIViewController) {
-        self.navigateToFeature(feature: AppConstants.mainStoryboard, identifier: AppConstants.details, fromViewController: viewController, transitionType: .BaseNavigationTransitionTypeModal)
+        self.navigateToFeature(feature: AppConstants.mainStoryboard,
+                               identifier: AppConstants.details,
+                               fromViewController: viewController,
+                               transitionType: .baseNavigationTransitionTypeModal)
     }
 }
