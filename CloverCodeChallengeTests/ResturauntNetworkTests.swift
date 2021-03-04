@@ -66,7 +66,7 @@ class ResturauntNetworkTests: XCTestCase {
         // When
         RestaurantUtillity.restaurantList { response in
             restaurantList = response.result
-            XCTAssertEqual(restaurantList?[2].id, 3)
+            XCTAssertEqual(restaurantList?[2].identifier, 3)
             expectation.fulfill()
         }
         

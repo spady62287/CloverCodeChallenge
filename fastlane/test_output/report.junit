@@ -1,17 +1,17 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<testsuites name='CloverCodeChallengeUITests.xctest' tests='8' failures='0'>
+<testsuites name='CloverCodeChallengeTests.xctest' tests='8' failures='0'>
+  <testsuite name='CloverCodeChallengeUITests.CloverCodeChallengeUITests' tests='2' failures='0'>
+    <testcase classname='CloverCodeChallengeUITests.CloverCodeChallengeUITests' name='testExample' time='2.327'/>
+    <testcase classname='CloverCodeChallengeUITests.CloverCodeChallengeUITests' name='testLaunchPerformance' time='14.448'/>
+  </testsuite>
   <testsuite name='CloverCodeChallengeTests.CloverCodeChallengeTests' tests='2' failures='0'>
     <testcase classname='CloverCodeChallengeTests.CloverCodeChallengeTests' name='testExample' time='0.001'/>
-    <testcase classname='CloverCodeChallengeTests.CloverCodeChallengeTests' name='testPerformanceExample' time='0.331'/>
+    <testcase classname='CloverCodeChallengeTests.CloverCodeChallengeTests' name='testPerformanceExample' time='0.260'/>
   </testsuite>
   <testsuite name='CloverCodeChallengeTests.ResturauntNetworkTests' tests='4' failures='0'>
-    <testcase classname='CloverCodeChallengeTests.ResturauntNetworkTests' name='testResponseIsNotNil' time='0.070'/>
-    <testcase classname='CloverCodeChallengeTests.ResturauntNetworkTests' name='testTheIDDataInTheResturauntList' time='0.074'/>
-    <testcase classname='CloverCodeChallengeTests.ResturauntNetworkTests' name='testTheNameDataInTheResturauntList' time='0.064'/>
-    <testcase classname='CloverCodeChallengeTests.ResturauntNetworkTests' name='testThereAre5Resturaunts' time='0.065'/>
-  </testsuite>
-  <testsuite name='CloverCodeChallengeUITests.CloverCodeChallengeUITests' tests='2' failures='0'>
-    <testcase classname='CloverCodeChallengeUITests.CloverCodeChallengeUITests' name='testExample' time='2.087'/>
-    <testcase classname='CloverCodeChallengeUITests.CloverCodeChallengeUITests' name='testLaunchPerformance' time='14.795'/>
+    <testcase classname='CloverCodeChallengeTests.ResturauntNetworkTests' name='testResponseIsNotNil' time='0.252'/>
+    <testcase classname='CloverCodeChallengeTests.ResturauntNetworkTests' name='testTheIDDataInTheResturauntList' time='0.180'/>
+    <testcase classname='CloverCodeChallengeTests.ResturauntNetworkTests' name='testTheNameDataInTheResturauntList' time='0.175'/>
+    <testcase classname='CloverCodeChallengeTests.ResturauntNetworkTests' name='testThereAre5Resturaunts' time='0.152'/>
   </testsuite>
 </testsuites>
