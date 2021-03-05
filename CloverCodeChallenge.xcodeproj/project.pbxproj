@@ -34,6 +34,7 @@
 		996D6AE925EF3890007AE0A1 /* Project.md in Resources */ = {isa = PBXBuildFile; fileRef = 996D6AE625EF3890007AE0A1 /* Project.md */; };
 		996D6AEA25EF3890007AE0A1 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 996D6AE725EF3890007AE0A1 /* README.md */; };
 		99A68E4825F16912001DE9E5 /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = 99A68E4725F16912001DE9E5 /* .swiftlint.yml */; };
+		99A83C5025F2945B00214770 /* DetailViewControllerUITest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99A83C4F25F2945B00214770 /* DetailViewControllerUITest.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -87,6 +88,7 @@
 		996D6AE625EF3890007AE0A1 /* Project.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = Project.md; sourceTree = "<group>"; };
 		996D6AE725EF3890007AE0A1 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		99A68E4725F16912001DE9E5 /* .swiftlint.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.yaml; path = .swiftlint.yml; sourceTree = "<group>"; };
+		99A83C4F25F2945B00214770 /* DetailViewControllerUITest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewControllerUITest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -293,6 +295,7 @@
 			children = (
 				996D6AD425EF3749007AE0A1 /* CloverCodeChallengeUITests.swift */,
 				996D6AD625EF3749007AE0A1 /* Info.plist */,
+				99A83C4F25F2945B00214770 /* DetailViewControllerUITest.swift */,
 			);
 			path = CloverCodeChallengeUITests;
 			sourceTree = "<group>";
@@ -464,6 +467,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				99A83C5025F2945B00214770 /* DetailViewControllerUITest.swift in Sources */,
 				996D6AD525EF3749007AE0A1 /* CloverCodeChallengeUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
