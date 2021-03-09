@@ -73,4 +73,28 @@ class ResturauntNetworkTests: XCTestCase {
         // Then
         wait(for: [expectation], timeout: 5)
     }
+    
+    func testErrorNetworkCall() {
+        // Given
+        let expectation = XCTestExpectation(description: "Test Request Can Handle Errors")
+        class MockRequest: BaseRequest {
+            override var url: URL? {
+                let urlString = "https://wwww.badlink.error"
+                return URL(string: urlString)
+            }
+        }
+        let errorRequest = MockRequest()
+        
+        // When
+        RestaurantUtillity.restaurantList(errorRequest) { response in
+            if let error = response.error {
+                XCTAssertNotNil(error)
+                expectation.fulfill()
+            }
+        }
+        
+        // Then
+        wait(for: [expectation], timeout: 5)
+
+    }
 }

@@ -31,19 +31,35 @@ class BaseViewController: UIViewController, BaseNavigator {
     
     lazy var loadingSpinner: AnimatedLoader = AnimatedLoader()
     
-    func loadData(for tableView: UITableView) {
-        showLoadingView()
-        RestaurantUtillity.restaurantList { response in
+    func loadData(for tableView: UITableView, errorView: UIView) {
+        showLoadingView(animated: true, after: 3.0)
+        let request = RestaurantRequest()
+        RestaurantUtillity.restaurantList(request) { response in
             if let result = response.result {
                 self.restaurantList = result
                 self.hideLoadingView()
+                self.hideErrorView(with: errorView)
                 tableView.reloadData()
             } else if let error = response.error {
+                self.hideLoadingView()
+                self.showErrorView(with: errorView)
                 dump(error)
             }
         }
     }
     
+    func showErrorView(animated: Bool = true, after delay: TimeInterval? = nil, with errorView: UIView) {
+        UIView.animate(withDuration: animated ? 0.3 : 0.0, delay: delay ?? 0, options: [], animations: {
+            errorView.isHidden = true
+        })
+    }
+    
+    func hideErrorView(with errorView: UIView) {
+        UIView.animate(withDuration: 0.3, animations: {
+            errorView.isHidden = false
+        })
+    }
+        
     func showLoadingView(animated: Bool = true, after delay: TimeInterval? = nil) {
         view.bringSubviewToFront(loadingView)
         loadingSpinner.start()

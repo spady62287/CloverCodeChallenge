@@ -29,4 +29,15 @@ class ViewControllerDetails: BaseViewController {
             idLabel.text = "\(identifier)"
         }
     }
+    
+    // MARK: - Actions
+    @IBAction func callRestaurant(_ sender: Any) {
+        if let url = URL(string: "tel://555-5555"), UIApplication.shared.canOpenURL(url) {
+            if #available(iOS 10, *) {
+                UIApplication.shared.open(url, options: [:], completionHandler: nil)
+            } else {
+                UIApplication.shared.openURL(url)
+            }
+        }
+    }
 }

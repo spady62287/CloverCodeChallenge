@@ -9,7 +9,7 @@ import Foundation
 
 public struct RestaurantResponse: BaseResponse {
     
-    var request: RestaurantRequest?
+    var request: BaseRequest?
     var task: URLSessionDataTask?
     var data: Data?
     var response: HTTPURLResponse?

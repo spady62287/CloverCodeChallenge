@@ -10,6 +10,7 @@ import UIKit
 class ViewController: BaseViewController, UITableViewDataSource, UITableViewDelegate {
     // MARK: - IBOutlets
     @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var errorView: UIView!
     
     // MARK: - Properties
     var selectedRestaurant: RestaurantResult?
@@ -20,7 +21,7 @@ class ViewController: BaseViewController, UITableViewDataSource, UITableViewDele
         tableView.delegate = self
         tableView.dataSource = self
         
-        loadData(for: self.tableView)
+        loadData(for: self.tableView, errorView: errorView)
     }
 
     // MARK: - Tableview Delegate & Datasource
