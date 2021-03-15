@@ -28,34 +28,58 @@ class DetailViewControllerUITest: XCTestCase {
     }
     
     func testIDLabelHasCorrectField() {
+        // Given
+        let tables = app.tables
+        let field = "Restaurant 1"
+        let access = "idLabel"
+        let value = "1"
+        
         // When
-        app.tables/*@START_MENU_TOKEN@*/.staticTexts["Restaurant 1"]/*[[".cells.staticTexts[\"Restaurant 1\"]",".staticTexts[\"Restaurant 1\"]"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/.tap()
+        tables.staticTexts[field].tap()
         
         // Then
-        XCTAssertEqual(app.staticTexts["idLabel"].label, "1")
+        XCTAssertEqual(app.staticTexts[access].label, value)
     }
     
     func testNameLabelHasCorrectField() {
+        // Given
+        let tables = app.tables
+        let field = "Restaurant 1"
+        let access = "nameLabel"
+        let value = "Restaurant 1"
+
         // When
-        app.tables/*@START_MENU_TOKEN@*/.staticTexts["Restaurant 1"]/*[[".cells.staticTexts[\"Restaurant 1\"]",".staticTexts[\"Restaurant 1\"]"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/.tap()
-        
+        tables.staticTexts[field].tap()
+
         // Then
-        XCTAssertEqual(app.staticTexts["nameLabel"].label, "Restaurant 1")
+        XCTAssertEqual(app.staticTexts[access].label, value)
     }
     
     func testCategoryLabelHasCorrectField() {
+        // Given
+        let tables = app.tables
+        let field = "Restaurant 1"
+        let access = "categoryLabel"
+        let value = "fast food"
+
         // When
-        app.tables/*@START_MENU_TOKEN@*/.staticTexts["Restaurant 1"]/*[[".cells.staticTexts[\"Restaurant 1\"]",".staticTexts[\"Restaurant 1\"]"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/.tap()
+        tables.staticTexts[field].tap()
         
         // Then
-        XCTAssertEqual(app.staticTexts["categoryLabel"].label, "fast food")
+        XCTAssertEqual(app.staticTexts[access].label, value)
     }
     
     func testDescriptionLabelHasCorrectField() {
+        // Given
+        let tables = app.tables
+        let field = "Restaurant 1"
+        let access = "descriptionLabel"
+        let value = "This is the test description for restaurant 1"
+
         // When
-        app.tables/*@START_MENU_TOKEN@*/.staticTexts["Restaurant 1"]/*[[".cells.staticTexts[\"Restaurant 1\"]",".staticTexts[\"Restaurant 1\"]"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/.tap()
+        tables.staticTexts[field].tap()
         
         // Then
-        XCTAssertEqual(app.staticTexts["descriptionLabel"].label, "This is the test description for restaurant 1")
+        XCTAssertEqual(app.staticTexts[access].label, value)
     }
 }

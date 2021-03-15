@@ -18,12 +18,12 @@ class RestaurantUtillity: BaseService {
      - returns: URLSessionDataTask?
      
      */
-    @discardableResult static public func restaurantList(_ request: RestaurantRequest = RestaurantRequest(), dispatchQueue: DispatchQueue? = BaseService.dispatchQueue, completionHandler: @escaping (RestaurantResponse) -> Void) -> URLSessionDataTask? {
+    @discardableResult static public func restaurantList(_ request: BaseRequest = BaseRequest(), dispatchQueue: DispatchQueue? = BaseService.dispatchQueue, completionHandler: @escaping (RestaurantResponse) -> Void) -> URLSessionDataTask? {
         
         var task: URLSessionDataTask?
 
         task = makeGetRequest(with: request, completeOn: dispatchQueue) { (data, response, error) in
-            
+                        
             let response = RestaurantResponse(request: request,
                                                      task: task,
                                                      data: data,
