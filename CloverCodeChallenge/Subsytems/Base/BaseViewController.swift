@@ -32,13 +32,15 @@ class BaseViewController: UIViewController, BaseNavigator {
     lazy var loadingSpinner: AnimatedLoader = AnimatedLoader()
     
     func loadData(for tableView: UITableView, errorView: UIView) {
+        self.hideErrorView(with: errorView)
         showLoadingView(animated: true, after: 3.0)
+        
         let request = RestaurantRequest()
+        
         RestaurantUtillity.restaurantList(request) { response in
             if let result = response.result {
-                self.restaurantList = result
                 self.hideLoadingView()
-                self.hideErrorView(with: errorView)
+                self.restaurantList = result
                 tableView.reloadData()
             } else if let error = response.error {
                 self.hideLoadingView()
@@ -50,13 +52,13 @@ class BaseViewController: UIViewController, BaseNavigator {
     
     func showErrorView(animated: Bool = true, after delay: TimeInterval? = nil, with errorView: UIView) {
         UIView.animate(withDuration: animated ? 0.3 : 0.0, delay: delay ?? 0, options: [], animations: {
-            errorView.isHidden = true
+            errorView.isHidden = false
         })
     }
     
     func hideErrorView(with errorView: UIView) {
         UIView.animate(withDuration: 0.3, animations: {
-            errorView.isHidden = false
+            errorView.isHidden = true
         })
     }
         

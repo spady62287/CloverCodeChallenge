@@ -7,10 +7,6 @@
 
 import Foundation
 
-enum FakeError: LocalizedError {
-    case badRequest
-}
-
 class RestaurantUtillity: BaseService {
     /**
      Retrieve list of Restaurants
@@ -27,14 +23,12 @@ class RestaurantUtillity: BaseService {
         var task: URLSessionDataTask?
 
         task = makeGetRequest(with: request, completeOn: dispatchQueue) { (data, response, error) in
-            
-            let fakeError = FakeError.badRequest
-            
+                        
             let response = RestaurantResponse(request: request,
                                                      task: task,
                                                      data: data,
                                                      response: response as? HTTPURLResponse,
-                                                     error: fakeError,
+                                                     error: error,
                                                      result: RestaurantResult.fromJSON(data))
             
             completionHandler(response)

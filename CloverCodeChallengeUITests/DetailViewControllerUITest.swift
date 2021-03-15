@@ -59,7 +59,7 @@ class DetailViewControllerUITest: XCTestCase {
         // Given
         let tables = app.tables
         let field = "Restaurant 1"
-        let access = "nameLabel"
+        let access = "categoryLabel"
         let value = "fast food"
 
         // When

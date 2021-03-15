@@ -1,23 +1,24 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<testsuites name='CloverCodeChallengeTests.xctest' tests='12' failures='0'>
-  <testsuite name='CloverCodeChallengeUITests.CloverCodeChallengeUITests' tests='2' failures='0'>
-    <testcase classname='CloverCodeChallengeUITests.CloverCodeChallengeUITests' name='testExample' time='2.396'/>
-    <testcase classname='CloverCodeChallengeUITests.CloverCodeChallengeUITests' name='testLaunchPerformance' time='14.765'/>
-  </testsuite>
-  <testsuite name='CloverCodeChallengeUITests.DetailViewControllerUITest' tests='4' failures='0'>
-    <testcase classname='CloverCodeChallengeUITests.DetailViewControllerUITest' name='testCategoryLabelHasCorrectField' time='2.689'/>
-    <testcase classname='CloverCodeChallengeUITests.DetailViewControllerUITest' name='testDescriptionLabelHasCorrectField' time='2.711'/>
-    <testcase classname='CloverCodeChallengeUITests.DetailViewControllerUITest' name='testIDLabelHasCorrectField' time='2.772'/>
-    <testcase classname='CloverCodeChallengeUITests.DetailViewControllerUITest' name='testNameLabelHasCorrectField' time='2.739'/>
-  </testsuite>
+<testsuites name='CloverCodeChallengeUITests.xctest' tests='13' failures='0'>
   <testsuite name='CloverCodeChallengeTests.CloverCodeChallengeTests' tests='2' failures='0'>
     <testcase classname='CloverCodeChallengeTests.CloverCodeChallengeTests' name='testExample' time='0.002'/>
-    <testcase classname='CloverCodeChallengeTests.CloverCodeChallengeTests' name='testPerformanceExample' time='0.272'/>
+    <testcase classname='CloverCodeChallengeTests.CloverCodeChallengeTests' name='testPerformanceExample' time='0.307'/>
   </testsuite>
-  <testsuite name='CloverCodeChallengeTests.ResturauntNetworkTests' tests='4' failures='0'>
-    <testcase classname='CloverCodeChallengeTests.ResturauntNetworkTests' name='testResponseIsNotNil' time='0.160'/>
-    <testcase classname='CloverCodeChallengeTests.ResturauntNetworkTests' name='testTheIDDataInTheResturauntList' time='0.064'/>
-    <testcase classname='CloverCodeChallengeTests.ResturauntNetworkTests' name='testTheNameDataInTheResturauntList' time='0.076'/>
-    <testcase classname='CloverCodeChallengeTests.ResturauntNetworkTests' name='testThereAre5Resturaunts' time='0.061'/>
+  <testsuite name='CloverCodeChallengeTests.ResturauntNetworkTests' tests='5' failures='0'>
+    <testcase classname='CloverCodeChallengeTests.ResturauntNetworkTests' name='testErrorNetworkCall' time='0.027'/>
+    <testcase classname='CloverCodeChallengeTests.ResturauntNetworkTests' name='testResponseIsNotNil' time='0.076'/>
+    <testcase classname='CloverCodeChallengeTests.ResturauntNetworkTests' name='testTheIDDataInTheResturauntList' time='0.069'/>
+    <testcase classname='CloverCodeChallengeTests.ResturauntNetworkTests' name='testTheNameDataInTheResturauntList' time='0.070'/>
+    <testcase classname='CloverCodeChallengeTests.ResturauntNetworkTests' name='testThereAre5Resturaunts' time='0.076'/>
+  </testsuite>
+  <testsuite name='CloverCodeChallengeUITests.CloverCodeChallengeUITests' tests='2' failures='0'>
+    <testcase classname='CloverCodeChallengeUITests.CloverCodeChallengeUITests' name='testExample' time='1.554'/>
+    <testcase classname='CloverCodeChallengeUITests.CloverCodeChallengeUITests' name='testLaunchPerformance' time='14.614'/>
+  </testsuite>
+  <testsuite name='CloverCodeChallengeUITests.DetailViewControllerUITest' tests='4' failures='0'>
+    <testcase classname='CloverCodeChallengeUITests.DetailViewControllerUITest' name='testCategoryLabelHasCorrectField' time='2.801'/>
+    <testcase classname='CloverCodeChallengeUITests.DetailViewControllerUITest' name='testDescriptionLabelHasCorrectField' time='2.749'/>
+    <testcase classname='CloverCodeChallengeUITests.DetailViewControllerUITest' name='testIDLabelHasCorrectField' time='2.703'/>
+    <testcase classname='CloverCodeChallengeUITests.DetailViewControllerUITest' name='testNameLabelHasCorrectField' time='2.690'/>
   </testsuite>
 </testsuites>
